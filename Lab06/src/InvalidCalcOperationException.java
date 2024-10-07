@@ -8,7 +8,7 @@ public class InvalidCalcOperationException extends Exception{
 	
 	public InvalidCalcOperationException(char operation) {
 		this();
-		this.operation = operation;
+		setOperation(operation);
 	}
 	
 	public void setOperation(char operation) {
@@ -20,7 +20,7 @@ public class InvalidCalcOperationException extends Exception{
 	
 	@Override
 	public String getMessage() {
-		return super.getMessage() + operation;
+		return String.format("%s: %c was chosen", super.getMessage(), operation);
 	}
 	
 	

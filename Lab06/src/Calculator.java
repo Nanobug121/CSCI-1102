@@ -52,8 +52,8 @@ public class Calculator {
 			ex.getMessage();
 			isError = true;
 		} finally {
-			if(isError) System.out.println("This program is terminating because of an erorr");
-			else System.out.println("This program is terminating");
+			if(isError) System.out.println("The program is terminating because of an erorr");
+			else System.out.println("The program is terminating");
 		}
 
 		// Display result
